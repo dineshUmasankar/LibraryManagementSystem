@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="1028.0">
+         <items>
+            <Button fx:id="returnToHomeButton" mnemonicParsing="false" onAction="#returnHome" text="Return to Home" />
+            <Label fx:id="currentUserLabel" minWidth="320.0" text="Signed In As: ">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <RadioButton fx:id="searchEmployeeIDRadioButton" mnemonicParsing="false" text="Search by Employee ID" />
+            <RadioButton fx:id="searchEmployeeNameRadioButton" mnemonicParsing="false" text="Search by Name" />
+            <TextField fx:id="searchboxTextField" prefHeight="25.0" prefWidth="260.0" />
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#search" text="Search" />
+         </items>
+      </ToolBar>
+      <TableView fx:id="employeeTableView" layoutX="14.0" layoutY="56.0" prefHeight="472.0" prefWidth="998.0" />
+   </children>
+</Pane>
